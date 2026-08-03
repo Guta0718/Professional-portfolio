@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widdh=device-widdh, initial-scale=1.0">
     <title>Guta Tiruneh- Portfolio</title>
 </head>
 <body>
@@ -10,16 +10,16 @@
 <nav>
     <ul>
         <li> 
-        <a href="">About me</a>
+        <a href="#about">About me</a>
         </li>
         <li>
-             <a href="">Skills</a>
+             <a href="#skills">Skills</a>
         </li>
         <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
         </li>
         <li>
-            <a href="">Contact me</a>
+            <a href="#contact">Contact me</a>
         </li>
     </ul>
 </nav>
@@ -27,7 +27,7 @@
   <main>
 <section id="intro">
     <figure>
-        <img src="" alt="">
+        <img src="profileimage.jpg" alt="Profile picture" widdh="200px" height="200px">
         <h1>Hi,My name is Guta Tiruneh</h1>
     </figure>
     <p> <strong>Mechanical Engineer</strong> </p>
@@ -36,20 +36,135 @@
 <section id="about"> 
     <h2> About me</h2>
     <article> 
-        I am a recent mechanical engineering student who is also passionate about programming. 
-        I have technical skills in mechanical design, SOLIDWORKS and manufacturing processes.
-        I also have basic html,css and javascript programming. I am a detail-oriented and a quick learner. 
+        <aside>
+        I am a recent mechanical engineering student who is also passionate about programming.,<br> 
+        I have technical skills in mechanical design, SOLIDWORKS and manufacturing processes. <br>
+        I also have basic html,css and javascript programming knowledge. I am a detail-oriented and,<br> 
+        a quick learner. 
+        </aside>
     </article>
 </section>
 <section id="skills"> 
     <h2>
     Skills 
     </h2>
-    
+    <dt>
+    <dd>SOLIDWORKS</dd>
+    <dd>Computer Aided manufacturing</dd>
+    <dd>Mechanical Design</dd>
+    <dd>Technical documentation</dd>
+    </dt>
 </section>
-<section id="projects"></section>
-<section id="contact"></section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li> <a href="#project1"> Design of a compact hydraulic power pack </a>
+        </li> 
+        <li> <a href="#project2"> Design and simulation of a row-crop weeding robot</a> 
+        </li>
+    </ul>
+
+    <article id="project1">
+        <header>
+            <hgroup>
+              <h3 id="project1-heading">Design of a compact hydraulic power pack</h3>
+              <p>Mechanical design of industrial power packs</p>
+            </hgroup>
+            <time datetime="2024-01">January 2024</time> -
+            <time datetime="2024-06">June 2024</time>
+          </header>
+          <figure>
+            <img src="project 1.png" alt="hydraulic power pack" width="650px" height="350px">
+            <figcaption>Designed hydraulic power pack</figcaption>
+          </figure>
+    </article>
+
+    <article id="project2">
+        <header>
+            <hgroup>
+              <h3 id="project2-heading">Design and simulation of a row-crop weeding robot</h3>
+            </hgroup>
+            <time datetime="2026-02">February 2026</time> -
+            <time datetime="2026-07">July 2026</time>
+        </header>
+          <figure>
+            <video controls width="650px" poster="project 2.png">
+              <source src="https://pixabay.com/videos/robot-crazy-lamp-robotic-arm-5001/" type="video/mp4">
+            </video>
+            <figcaption>
+              Simulation of the design
+            </figcaption>
+          </figure>
+          <button onclick="document.getElementById('dialog-more').showModal()">
+              See more about the projects
+            </button>
+            <dialog id="dialog-more">
+            <form method="dialog">
+              <details>
+            <summary>Achievments of the project</summary>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+    
+              </li>
+              <li>Fugit illum repellendus praesentium doloremque dicta sequi hic, nobis libero minima esse earum!</li>
+            </ul>
+          </details>
+              <button type="submit">Close Dialog</button>
+            </form>
+          </dialog>
+    </article>
+</section>
+<section id="contact">
+    <h2> Contact me</h2>
+    <p>For any work-related issue or new projects, use the links below to get in touch and fill the form.</p>
+    <address> 
+        <p>E-mail: <a href="mailto:guttir19@gmail.com"> guttir19@gmail.com</a></p>
+        <p>Instagram: <a href="http://instagram.com/profile"> Instagram </a></p>
+    </address>    
+    <form action="/submit-form" method="post">
+        <legend>Contact form</legend>
+        <div> 
+            <label for="name">Name:</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="subject">Subject: </label>
+            <select name="subject" id="subject">
+                <option value>Select subject</option>
+                <option value="new">New project</option>
+                <option value="current">Current work-related</option>
+            </select>
+        </div>
+        <div>
+            <label for="message"> Write me: </label>
+            <input type="message">
+        </div>
+            <button type="submit"> Send</button>
+    </form>
+</section>
   </main>
-  <footer></footer>
+
+  <footer>
+    <p> 
+    July 2026.Guta Tiruneh
+    </p>
+  </footer>
 </body>
 </html>
+
+    
+
+          
+
+         
+
+         
+      
+
+        
+        
